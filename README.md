@@ -8,7 +8,10 @@ https://music-player-mrtmrngz.netlify.app/  <br>
 
 ## Site Images
 
-![](https://i.hizliresim.com/dzdf0ie.png) <br><br>
-![](https://i.hizliresim.com/pzk0db6.png)
+
+
+
+![](https://i.hizliresim.com/b1lu9bd.png) <br><br>
+![](https://i.hizliresim.com/pujvhqo.png)
 
 
