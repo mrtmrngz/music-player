@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="range"] {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    column-gap: 5px;
+    height: 500px;
+}
+
+.card {
+    width: 400px;
+    border: 1px solid #111;
+    border-radius: 15px;
+}
+
+.card.openMenu {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#music-image {
+    width: 100%;  
+    border-radius: 15px 15px 0 0;
+    /* position: absolute; */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.music-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.music-info .title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.music-info .singer {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+.progress {
+    margin: 20px 0;
+}
+
+.progress #progress-bar {
+    width: 100%;
+}
+
+.progress .times {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls .music-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+    margin-bottom: 35px;
+}
+
+.controls .music-controls i {
+    font-size: 35px;
+}
+
+.controls .volume-menu-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls .volume-menu-controls i {
+    font-size: 22px;
+}
+
+.controls .volume-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+#menu-card {
+    border: 1px solid #111;
+    width: 450px;
+    height: 100%;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    scale: 0;
+    transition: all .3s ease;
+}
+
+#menu-card.show {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+    pointer-events: auto;
+}
+
+.music-list-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.music-list-item:not(:last-child) {
+    border-bottom: 1px solid #111;
+}
+
+.music-name {
+    font-size: 16px;
+}
+
+.music-duration {
+    background-color: aqua;
+    padding: 5px 20px;
+    border-radius: 25px;
+}
+
+li.playing{
+    background-color: orange;
+    color: #fff;
+}
+
+
+
+
+
